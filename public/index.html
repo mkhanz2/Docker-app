@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmos | Astronomy Explorer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#">✦ COSMOS</a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#planets">Planets</a>
+      <a href="#missions">Missions</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">YOUR JOURNEY BEGINS HERE</p>
+        <h1>Explore the<br><span>Infinite Universe.</span></h1>
+        <p class="intro">
+          Discover distant worlds, mysterious planets, and the wonders
+          of our cosmic neighbourhood.
+        </p>
+        <a class="primary-btn" href="#planets">Explore the planets ↗</a>
+      </div>
+
+      <div class="planet-art" aria-label="Illustration of Saturn">
+        <div class="orbit-ring"></div>
+        <div class="saturn"></div>
+        <div class="moon"></div>
+      </div>
+
+      <div class="hero-footer">
+        <span>01 — THE SOLAR SYSTEM</span>
+        <span>LOOK UP. WONDER MORE.</span>
+      </div>
+    </section>
+
+    <section class="section" id="planets">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">OUR COSMIC NEIGHBOURS</p>
+          <h2>Explore the planets</h2>
+        </div>
+        <span class="planet-count">8 PLANETS</span>
+      </div>
+
+      <input
+        id="planet-search"
+        class="search"
+        type="search"
+        placeholder="Search planets, e.g. Mars..."
+        aria-label="Search planets"
+      >
+
+      <div id="planet-grid" class="planet-grid"></div>
+      <p id="empty-message" hidden>No planets found. Try another name.</p>
+    </section>
+
+    <section class="section missions" id="missions">
+      <p class="eyebrow">HUMANITY BEYOND EARTH</p>
+      <h2>Great space missions</h2>
+
+      <div class="mission-list">
+        <article>
+          <span class="mission-number">01</span>
+          <div>
+            <h3>Apollo 11</h3>
+            <p>Humanity's first crewed Moon landing in 1969.</p>
+          </div>
+          <span>1969</span>
+        </article>
+
+        <article>
+          <span class="mission-number">02</span>
+          <div>
+            <h3>Voyager 1</h3>
+            <p>A spacecraft exploring interstellar space.</p>
+          </div>
+          <span>1977</span>
+        </article>
+
+        <article>
+          <span class="mission-number">03</span>
+          <div>
+            <h3>James Webb Space Telescope</h3>
+            <p>Observing distant galaxies and the early universe.</p>
+          </div>
+          <span>2021</span>
+        </article>
+
+        <article>
+          <span class="mission-number">04</span>
+          <div>
+            <h3>Chandrayaan-3</h3>
+            <p>India's successful lunar landing mission in 2023.</p>
+          </div>
+          <span>2023</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#">✦ COSMOS</a>
+    <p>Made for curious minds. Keep exploring. ✨</p>
+  </footer>
+</body>
+</html>
